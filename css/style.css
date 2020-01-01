@@ -1,0 +1,76 @@
+html{
+    scroll-behavior: smooth;
+}
+
+#hero, #learn, #blog {
+    height: 100vh;
+}
+
+#heroImage {
+    background-image: url('../img/hero.png');
+    background-repeat: no-repeat;
+    /* opacity: 0.6; */
+    background-size: cover;
+    background-position-y: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#heroBody {
+    position: relative;
+}
+
+#heroText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.arrow {
+    opacity: 0.3;
+}
+
+.arrow:hover {
+    opacity: 0.5;
+    transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+}
+
+.arrow-rotate {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.social-icon:hover {
+    fill: #DA4567;
+}
+
+#global-nav {
+    height: 125px;
+    -webkit-transition: height .5s, line-height .5s;
+    transition: height .5s, line-height .5s;
+}
+
+.scrolled-nav {
+    height: 75px !important;
+}
+
+#logo {
+    width: 90px;
+    -webkit-transition: width .5s, line-height .5s;
+    transition: width .5s, line-height .5s;
+}
+
+.logo-small {
+    width: 50px !important;
+}
+
+#scroll-btn:hover {
+    animation: pulse 1s;
+    -webkit-animation: pulse 1s;
+}

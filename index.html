@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <title>Learn Center</title>
+</head>
+
+<body>
+
+    <div class="container-fluid px-0">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light border-bottom" id="global-nav">
+            <a class="navbar-brand" href="#">
+                <div class="d-flex align-items-center ml-5">
+                    <img src="img/logo.png" id="logo" alt="logo">
+                </div>
+            </a>
+
+            <div class="collapse navbar-collapse justify-content-end mr-5 pr-5 align-self-stretch"
+                id="navbarSupportedContent">
+                <ul class="navbar-nav align-self-stretch">
+                    <li class="nav-item mr-4 align-self-center">
+                        <a class="nav-link font-weight-bold" href="#top">Courses <i
+                                class="fas fa-chevron-down text-primary ml-1"></i></a>
+                    </li>
+                    <li class="nav-item mr-4 align-self-center">
+                        <a class="nav-link font-weight-bold" href="#aboutPage">Blog <i
+                                class="fas fa-chevron-down text-primary ml-1"></i></a>
+                    </li>
+                    <li class="nav-item mr-4 align-self-center">
+                        <a class="nav-link font-weight-bold" href="#projectsPage">About <i
+                                class="fas fa-chevron-down text-primary ml-1"></i></a>
+                    </li>
+                    </li>
+                    <li class="nav-item mr-4 align-self-center">
+                        <a class="nav-link font-weight-bold" href="#contactPage">Contact <i
+                                class="fas fa-chevron-down text-primary ml-1"></i></a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <button type="button" class="btn btn-sm rounded-pill btn-primary">Log in</button>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="#contactPage"><i class="fas fa-globe"></i> Ar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="hero" class="d-flex">
+            <div id="heroImage"></div>
+            <div class="row" style="height: 100%; width: 100%;">
+                <div class="offset-xl-4 col-xl-4 offset-xl-4">
+                    <div class="d-flex flex-column justify-content-end" style="height: 100%;">
+                        <h1 class="text-center alpha">Education For Everybody</h1>
+                        <h1 class="text-center alpha">And Everyday</h1>
+                        <input type="text" class="form-control typewrite mt-4" placeholder=""
+                            style="position: relative;" data-period="2000"
+                            data-type='[ "Software Development", "Networks", "System Administrator", "Graphic Design", "Foriegn Languages", "Business Management", "ICDL" ]'>
+                        <div class="text-center mb-5 mb-5">
+                            <small class="text-dark">Search Right Now For Your Next Course!</small>
+                        </div>
+                        <div class="text-center mt-5" id="scroll-btn">
+
+                            <a href="#learnAnchor"><i class="fas fa-3x fa-angle-double-down text-primary"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <div class="container pt-5">
+            <div id="learn">
+                <div id="learnAnchor" style="height: 75px; width: 100%;"></div>
+                <h1 class="text-center">Why Learn With Us?</h1>
+                <br><br><br>
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="px-5 d-flex flex-column align-items-center justify-content-center">
+                            <div style="width: 100px; height: 100px;"
+                                class="d-flex align-items-center justify-content-center">
+                                <img src="img/pic1.png" width="100px" alt="">
+                            </div>
+                            <p class="font-weight-bold text-center">Professional Trainers</p>
+                            <p class="text-center">Get on right path
+                                with Our Certified And
+                                Well Recognized Tutors</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="px-5 d-flex flex-column align-items-center justify-content-center">
+                            <div style="width: 100px; height: 100px;"
+                                class="d-flex align-items-center justify-content-center">
+                                <img src="img/pic2.png" width="80px" alt="">
+                            </div>
+                            <p class="font-weight-bold text-center">Solid Growth</p>
+                            <p class="text-center">Get The Right Career
+                                And Achieve Your Professional
+                                Goals with Right Courses</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+
+                        <div class="px-5 d-flex flex-column align-items-center justify-content-center">
+                            <div style="width: 100px; height: 100px;"
+                                class="d-flex align-items-center justify-content-center">
+                                <img src="img/pic3.png" width="100px" alt="">
+                            </div>
+                            <p class="font-weight-bold text-center">Great Environment</p>
+                            <p class="text-center">Use Our High-End Labs With the
+                                Comfort and Chill to Be On Right Path
+                                to Full Potential of Learning Process</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="blog">
+                <h3 class="">Read in Our Blog</h3>
+                <br><br><br>
+                <div class="row">
+                    <div class="col-xl-1 d-flex align-items-center justify-content-center">
+                        <a onclick="carouselLeft();">
+                            <img class="arrow arrow-rotate" width="30px" src="img/next.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-xl-10" id="carouselBody">
+                        <div id="blogCarousel" class="carousel slide w-100" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <h6 class="text-secondary">Software Development</h6>
+                                            <h5 class="">Web Development Trends 2020
+                                                </h4>
+                                                <br><br>
+                                                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing
+                                                    elit. Consequatur repellat, recusandae earum voluptas facilis et
+                                                    reprehenderit hic, odit commodi enim nesciunt harum? Quod, officiis?
+                                                    Tempora debitis cum eius ipsam non?</p>
+                                                <p class="text-secondary">User in Computer Learning</p>
+                                                <small class="text-secondary">1 sep, 2019 | 10 min read</small>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <img src="img/blog01.jpg" class="d-block w-100 rounded" alt="blog01">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <h6 class="text-secondary">Computer 101</h6>
+                                            <h5 class="">Computer Skills You should master
+                                                </h4>
+                                                <br><br>
+                                                <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur
+                                                    adipisicing elit. Temporibus nisi magni impedit doloribus, amet
+                                                    consequuntur quo beatae aut fugiat adipisci, laborum excepturi esse
+                                                    iusto maiores praesentium provident. Quasi, perspiciatis illum.</p>
+                                                <p class="text-secondary">User in Computer Learning</p>
+                                                <small class="text-secondary">15 sep, 2019 | 3 min read</small>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <img src="img/blog02.jpg" class="d-block w-100 rounded" alt="blog02">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <h6 class="text-secondary">Human Resources</h6>
+                                            <h5 class="">Guidence & Ethics of Workplace
+                                                </h4>
+                                                <br><br>
+                                                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing
+                                                    elit. Harum dicta laboriosam ipsum eaque pariatur aspernatur,
+                                                    blanditiis
+                                                    maiores suscipit consequuntur, id illum voluptas nihil non illo
+                                                    nesciunt
+                                                    fugiat earum! Odit, et.</p>
+                                                <p class="text-secondary">User in Computer Learning</p>
+                                                <small class="text-secondary">08 sep, 2019 | 5 min read</small>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <img src="img/blog03.jpg" class="d-block w-100 rounded" alt="blog02">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <h6 class="text-secondary">Computer & IT</h6>
+                                            <h5 class="">System Administrator in 2020 and beyond
+                                                </h4>
+                                                <br><br>
+                                                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur,
+                                                    adipisicing elit. Incidunt, impedit id! Rerum reprehenderit modi
+                                                    laborum. Quibusdam accusamus harum reprehenderit ut, excepturi
+                                                    voluptas
+                                                    nostrum assumenda illum, ducimus a exercitationem nemo voluptatibus.
+                                                </p>
+                                                <p class="text-secondary">User in Computer Learning</p>
+                                                <small class="text-secondary">10 sep, 2019 | 4 min read</small>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <img src="img/blog04.jpg" class="d-block w-100 rounded" alt="blog02">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <h6 class="text-secondary">Design</h6>
+                                            <h5 class="">Design Aspects, Tool And More .. ?
+                                                </h4>
+                                                <br><br>
+                                                <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur
+                                                    adipisicing
+                                                    elit.
+                                                    Voluptatibus fuga enim quibusdam recusandae incidunt, dolore, ipsam
+                                                    asperiores modi
+                                                    dolores consequatur neque ab. At sunt laboriosam veniam eius minima
+                                                    aspernatur
+                                                    perspiciatis.</p>
+                                                <p class="text-secondary">User in Computer Learning</p>
+                                                <small class="text-secondary">10 sep, 2019 | 2 min read</small>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <img src="img/blog05.jpg" class="d-block w-100 rounded" alt="blog02">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-1 d-flex align-items-center justify-content-center">
+                        <a onclick="carouselNext();">
+                            <img class="arrow" src="img/next.svg" width="30px" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="bg-light border-top pt-4 mb-3 ">
+            <div class="px-5">
+                <div class="row ">
+                    <div class="col-xl-8">
+                        <p class="mb-1">Make Sure You're on Our E-mail List</p>
+                        <form action="#" class="form-inline" autocomplete="off">
+                            <input type="email" class="form-control mr-2" placeholder="Your E-mail">
+                            <button type="submit" class="btn btn-outline-warning">Sign up</button>
+                        </form>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="row">
+                            <p>Download Our App</p>
+                        </div>
+                        <div class="row d-flex align-items-center justify-content-center">
+                            <img src="img/google-play.png" class="mr-2" width="150px" alt="">
+                            <img src="img/app-store.png" class="mr-2" width="150px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-8 d-flex align-self-end">
+                        <small>
+                            Developed by well_code 2019
+                        </small>
+                    </div>
+                    <div class="col-xl-4 mt-5 d-flex flex-row align-items-center justify-content-center">
+                        <img src="img/facebook.svg" class="mr-3 social-icon " width="40px" alt="">
+                        <img src="img/messenger.svg" class="mr-3 social-icon" width="40px" alt="">
+                        <img src="img/twitter.svg" class="mr-3 social-icon" width="40px" alt="">
+                        <img src="img/whatsapp.svg" class="mr-3 social-icon" width="40px" alt="">
+                        <img src="img/youtube.svg" class="mr-3 social-icon" width="40px" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/73fd851d67.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <script src="js/typeWritter.js"></script>
+</body>
+
+</html>
